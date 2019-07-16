@@ -9,7 +9,10 @@ botaoImportar.addEventListener("click", function(event) {
     xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
     xhr.addEventListener("load", function(){
         var pacientes = JSON.parse(xhr.responseText);
-        
+
+        pacientes.forEach(function(paciente){
+            adicionaPacienteNaTabela(paciente);
+        });
     });
     xhr.send();
 });
