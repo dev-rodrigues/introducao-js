@@ -155,3 +155,10 @@ button[disabled=disabled], button:disabled {
 .invisivel {
 	display: none;
 }
+
+.btn-largo {
+	width: 198px;
+	position: absolute;
+	margin-top: -49px;
+	margin-left: 587px;
+}
