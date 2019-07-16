@@ -6,7 +6,7 @@ botaoImportar.addEventListener("click", function (event) {
 
     var xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes2");
+    xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
     xhr.addEventListener("load", function () {
 
         if (xhr.status == 200) {
